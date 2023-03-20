@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function confirmaw(answer) {
+    let result = '';
+    if (answer){
+        result = 'nao. muc luon'
+    }else {
+        result = 'ti nua muc nhe'
+    }
+    return result
+}
+let question = confirm('muon chien bay gio khong?')
+let theanswer = confirmaw(question)
+alert(theanswer)
+</script>
+</body>
+</html>
