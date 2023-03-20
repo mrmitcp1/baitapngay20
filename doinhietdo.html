@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<label>Fahrenheit</label>
+<input type="number" name="temp" id="num"
+oninput="tempChange()">
+<p> Celsius : <span id="result"></span></p>
+<body>
+<script>
+    function tempChange() {
+        let temp =  document.getElementById('num').value
+        document.getElementById('result').innerHTML = (temp - 32) / 1.8
+    }
+</script>
+</body>
+</html>
